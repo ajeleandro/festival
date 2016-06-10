@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/header"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="left"
+        android:text="Header"
+        android:visibility="gone"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    
+	    <ImageView
+	        android:id="@+id/separator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/horizontalline" />
+	
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/separator"
+	        android:orientation="horizontal"
+	        android:weightSum="100" >
+	
+	        <RelativeLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="35" >
+	
+	            <ImageView
+	                android:id="@+id/video_preview_thumbnail"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:src="@drawable/default_video_poster" />
+	
+	            <ImageView
+	                android:id="@+id/video_preview_festival_icon"
+	                android:layout_width="33dp"
+	                android:layout_height="33dp"
+	                android:layout_alignParentBottom="true"
+	                android:layout_alignParentRight="true"
+	                android:src="@drawable/ic_launcher" />
+	        </RelativeLayout>
+	
+	        <TextView
+	            android:id="@+id/video_preview_title"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="65"
+	            android:text="Video Title Preview"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#FFFFFF" />
+	    </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="100">
+       
+    	<RelativeLayout
+    	     android:id="@+id/relativeLayoutCompleto"
+    	     android:visibility="gone"
+    	     android:layout_width="0dip"
+    		 android:layout_height="wrap_content"
+    		 android:layout_weight="100">
+    		 
+		    <com.artefacto1971.festival.classes.SquareImageView
+		        android:id="@+id/ThumbnailCompleto"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/loading"
+		        android:scaleType="centerCrop" />
+		    
+		    <TextView
+		        android:id="@+id/TitleCompleto"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="15dp"
+		        android:paddingBottom="15dp"
+		        android:layout_alignBottom="@+id/ThumbnailCompleto"
+		        android:layout_gravity="bottom"
+		        android:textColor="@android:color/white"
+		        android:background="#99000000"
+		        />
+		</RelativeLayout>    
+     
+    	<RelativeLayout
+    	     android:id="@+id/relativeLayout1"
+    	     android:layout_width="0dip"
+    	     android:visibility="gone"
+    		 android:layout_height="wrap_content"
+    		 android:layout_weight="50">
+    		 
+		    <com.artefacto1971.festival.classes.SquareImageView
+		        android:id="@+id/Thumbnail"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/loading"
+		        android:scaleType="centerCrop" />
+		    
+		    <TextView
+		        android:id="@+id/Title"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="15dp"
+		        android:paddingBottom="15dp"
+		        android:layout_alignRight="@id/Thumbnail"
+		        android:layout_alignBottom="@id/Thumbnail"
+		        android:layout_gravity="bottom"
+		        android:textColor="@android:color/white"
+		        android:background="#99000000"
+		        />
+		</RelativeLayout>    
+	    <RelativeLayout
+    	     android:id="@+id/relativeLayout2"
+    	     android:layout_width="0dip"
+    	     android:visibility="gone"
+    		 android:layout_height="wrap_content"
+    		 android:layout_weight="50">
+		    
+		    <com.artefacto1971.festival.classes.SquareImageView
+		        android:id="@+id/Thumbnail2"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/loading"
+		        android:scaleType="centerCrop"/>
+		    
+		    <TextView
+		        android:id="@+id/Title2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="15dp"
+		        android:paddingBottom="15dp"
+		        android:layout_alignRight="@id/Thumbnail2"
+		        android:layout_alignBottom="@id/Thumbnail2"
+		        android:layout_gravity="bottom"
+		        android:textColor="@android:color/white"
+		        android:background="#99000000"
+		        />
+		    
+	    </RelativeLayout>   
+</LinearLayout>

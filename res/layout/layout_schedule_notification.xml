@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+    <LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent" >
+        
+        <TextView
+	        android:id="@+id/day"
+	        style="?android:attr/listSeparatorTextViewStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#3c3c3c"
+	        android:gravity="center_horizontal"
+	        android:text="Day"
+	        android:textColor="#FFFFFF" />
+        
+         <TextView
+	        android:id="@+id/time"
+	        style="?android:attr/listSeparatorTextViewStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#3c3c3c"
+	        android:gravity="center_horizontal"
+	        android:text="Time"
+	        android:textColor="#FFFFFF" />
+	    
+    
+   <RelativeLayout
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:paddingBottom="20dp">
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"/>
+	
+	    <TextView
+	        android:id="@+id/list_content1"
+	        android:layout_marginTop="25dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/imageView1"
+	        android:layout_alignParentTop="true"
+	        android:text="name"
+	        android:textColor="@color/control_two"
+	        android:textSize="17sp"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/list_content2"
+			android:layout_marginLeft="15dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/list_content1"
+	        android:layout_toRightOf="@+id/imageView1"
+	        android:text="place"
+	        android:textColor="#FFFFFF"
+	        android:textSize="17sp" />
+
+	</RelativeLayout>
+</LinearLayout>
+

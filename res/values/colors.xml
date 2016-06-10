@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="control_one">#4C4C4C</color> 
+    <color name="header">#444444</color> 
+	<color name="control_two">#51D4D4</color> 
+	<color name="control_one_opaque">#51D4D4</color> 
+	<color name="control_two_opaque">#E6E6E6</color> 
+
+</resources>
